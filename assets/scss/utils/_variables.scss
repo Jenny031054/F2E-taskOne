@@ -298,14 +298,15 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #C87336 !default;
+$secondary:     #105EA7 !default;
 $success:       $green !default;
-$info:          $cyan !default;
+$info:          #E4D3CC !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #FFFBF8 !default;
 $dark:          $gray-900 !default;
+$gray:          #454545 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -317,7 +318,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "gray":       $gray
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -374,11 +376,15 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25,//4
+  2: $spacer * .5, //8
+  3: $spacer,//16
+  4: $spacer * 1.5,//24
+  5: $spacer * 2,  //32
+  6: $spacer * 2.25,//36
+  7: $spacer * 2.5,//40
+  8: $spacer * 3,  //48 
+  9: $spacer * 5,  //80 
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -398,16 +404,16 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-bg:                   $info !default;
+$body-color:                #454545 !default;
 $body-text-align:           null !default;
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-color:                              #454545 !default;
+$link-decoration:                         none !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -419,7 +425,7 @@ $stretched-link-z-index:                  1 !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:  0px !default;// 1rem  custom
 
 
 // Grid breakpoints
@@ -498,6 +504,7 @@ $border-radius-lg:            .5rem !default;
 $border-radius-xl:            1rem !default;
 $border-radius-2xl:           2rem !default;
 $border-radius-pill:          50rem !default;
+
 // scss-docs-end border-radius-variables
 
 // scss-docs-start box-shadow-variables
@@ -540,7 +547,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:    'Noto Sans TC', "Noto Serif TC",  "Noto Sans",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -558,7 +565,7 @@ $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
 $font-weight-semibold:        600 !default;
 $font-weight-bold:            700 !default;
-$font-weight-bolder:          bolder !default;
+$font-weight-bolder:          900 !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
@@ -566,12 +573,12 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 3 !default; //48px //2.5 
+$h2-font-size:                $font-size-base * 2 !default; //32px
+$h3-font-size:                $font-size-base * 1.75 !default;//28px
+$h4-font-size:                $font-size-base * 1.5 !default; //24px
+$h5-font-size:                $font-size-base * 1.25 !default;//20px
+$h6-font-size:                $font-size-base * 1.125!default;//18px
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
