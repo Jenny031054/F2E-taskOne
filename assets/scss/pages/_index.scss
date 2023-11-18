@@ -32,7 +32,17 @@ p {
   width: 160px;
 }
 .bg-news {
+  background-color: $light;
   border-radius: 100px 0px 0px 100px;
+  width: 90%;
+  margin-left: auto;
+  padding: 120px;
+  height: 100%;
+  @media (max-width:992px) {
+    width: 100%;
+    border-radius: 0px;
+    padding: 20% 12px;
+  }
 }
 .news-card {
   display: flex;
@@ -47,9 +57,16 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-weight: bold;
-  
+  @media (max-width:992px) {
+    margin-bottom: 12px;
+  }
+}
+.card-num {
+  -webkit-text-stroke: 2px $gray;
+  color: $light;
+  font-weight: 900;
 }
 .news-card-tag {
   border-radius: 10px 0px 0px 0px;
@@ -76,21 +93,13 @@ p {
 
 .fund-card {
   border-radius: 12px 12px 0px 0px;
+  width: 500px;
 }
 //文字簍空
 .text-stroke{
-  position: relative;
-  color:transparent;
-  -webkit-text-stroke: 4px #fff;
-  z-index: 10;
-  // &::before {
-  //   content: attr(data-stroke);
-  //   position: absolute;
-  //   -webkit-text-stroke: 5px #fff;
-    
-  //   z-index: -1;
+  color: #c87336;
+  text-shadow: 1px 1px 0.5px #fffbf8, -1px -1px 0.5px #fffbf8, 1px -1px 0.5px #fffbf8, -1px 1px 0.5px #fffbf8;
 
-  // }
 }
 .text-shadow { 
   text-shadow:3px 3px 0 $gray;
@@ -103,8 +112,6 @@ p {
 //border-dash
 .border-dash {
   border-bottom: dashed $gray 2px ;
-  
-
 }
 
 .form-line {
@@ -151,11 +158,20 @@ p {
 .triangle {
   top: -150px;
   left: 10%;
+  @media (max-width:992px) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }
 .news-title {
   top: -50px;
   left: 15%;
   letter-spacing: 16px;
+  @media (max-width:992px) {
+    left: 50%;
+    top:10%;
+    transform: translate(-50%, -50%);
+  }
 }
 //google icon
 
@@ -167,7 +183,7 @@ p {
   'opsz' 24
 }
 
-//
+// 最新消息
 .swiper {
   width: 100%;
   height: 100%;
@@ -188,4 +204,24 @@ p {
   width: 100%;
   height: 350px;
   object-fit: cover;
+}
+//捐款跑馬燈
+.donateSwiper{
+  background-color :$info;
+  .swiper-slide {
+    background: $info;
+  }
+}
+.swiper-wrapper-donate {
+  transition-timing-function: linear;
+}
+.swiper-slide-donate  {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  width: auto;
+ 
+  
 }

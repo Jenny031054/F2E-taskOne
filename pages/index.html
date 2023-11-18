@@ -29,7 +29,7 @@
           <div class="d-flex flex-column text-center w-100">
             <h2 class="fs-1 font-NotoSerif fw-bolder ls-16">喵立翰</h2>
             <h5 class="fs-5">MIAO LI-HAN</h5>
-            <h5 class="fs-5">立法委員候選人</h5>
+            <h5 class="fs-5 ls-16">立法委員候選人</h5>
           </div>
         </div>
         <div class="col-lg-6">
@@ -40,9 +40,9 @@
       </div>
     </div>
     <!-- 最新消息 -->
-    <div class="container-fluid py-9 ">
+    <div class="container-lg-fluid py-9 ">
       
-      <div class="bg-news bg-light position-relative p-9" style="height: 700px;">
+      <div class="bg-news  position-relative" >
         <img src="../assets/images/Polygon 1.png" alt="" class="triangle position-absolute">
         <h2 class="fw-bold position-absolute news-title">最新消息</h2>
         <!-- Swiper -->
@@ -51,9 +51,9 @@
           <div class="swiper-slide">
             <!-- slide 1 -->
             <div class="news-card w-100">
-              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center ">
                 <div class="news-card-num">
-                  <p class="fs-1 text-light text-shadow">1</p>
+                  <p class="fs-1 text-light card-num ">1</p>
                   <p class="text-light">12 / 4</p>
                 </div>
   
@@ -85,9 +85,9 @@
           <div class="swiper-slide">
             <!-- Slide 2 -->
             <div class="news-card w-100">
-              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center ">
                 <div class="news-card-num">
-                  <p class="fs-1 text-light text-shadow">2</p>
+                  <p class="fs-1 text-light card-num">2</p>
                   <p class="text-light">12 / 4</p>
                 </div>
   
@@ -120,9 +120,9 @@
           <div class="swiper-slide">
              <!-- Slide 3 -->
              <div class="news-card w-100">
-              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex justify-content-between align-items-center  flex-column flex-lg-row">
                 <div class="news-card-num">
-                  <p class="fs-1 text-light text-shadow">3</p>
+                  <p class="fs-1 text-light card-num">3</p>
                   <p class="text-light">12 / 4</p>
                 </div>
   
@@ -154,9 +154,9 @@
           <div class="swiper-slide">
              <!-- Slide 4-->
              <div class="news-card w-100">
-              <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex justify-content-between align-items-center  flex-column flex-lg-row">
                 <div class="news-card-num">
-                  <p class="fs-1 text-light text-shadow">4</p>
+                  <p class="fs-1 text-light card-num">4</p>
                   <p class="text-light">12 / 4</p>
                 </div>
   
@@ -239,7 +239,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-center">
-        <a href="#" class="fs-5 d-flex align-items-center">
+        <a href="policy.html" class="fs-5 d-flex align-items-center">
           M O R E
           <span class="material-symbols-outlined">
             arrow_right
@@ -254,9 +254,13 @@
         <h2 class="fw-bold ls-16 mb-3">您的小筆捐款<br> 是每隻毛孩未來的大大動力！</h2>
         <p class="mt-1">目前小額贊助總金額：987,655,873</p>
       </div>
-      <!-- 捐款卡片 -->
-      <div class="row">
-        <div class="col-lg-5">
+        
+    </div>
+    <!-- swiper 捐款卡片輪播跑馬燈 -->
+    <div class="swiper donateSwiper">
+      <div class="swiper-wrapper swiper-wrapper-donate ">
+        <!-- slide 1 -->
+        <div class="swiper-slide swiper-slide-donate">
           <div class="bg-primary fund-card py-3">
             <h3 class="fw-bold mt-1 mb-4 text-center text-light ls-16">喵星大使</h3>
             <div class="d-flex justify-content-between py-4 px-6">
@@ -271,7 +275,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-5">
+        <!-- slide 2 -->
+        <div class="swiper-slide swiper-slide-donate">
           <div class="bg-primary fund-card py-3">
             <h3 class="fw-bold mt-1 mb-4 text-center text-light ls-16">喵星傳奇</h3>
             <div class="d-flex justify-content-between py-4 px-6">
@@ -286,19 +291,68 @@
             </div>
           </div>
         </div>
+        <!-- slide 3 -->
+        <div class="swiper-slide swiper-slide-donate">
+          <div class="bg-primary fund-card py-3">
+            <h3 class="fw-bold mt-1 mb-4 text-center text-light ls-16">喵星自我</h3>
+            <div class="d-flex justify-content-between py-4 px-6">
+              <div class="">
+                <p class="text-stroke fw-bolder fs-1" >自訂</p>
+                <p class="fw-bold text-light fs-sm">每次捐款金額</p>
+              </div>
+              <div class="">
+                <p class="text-stroke fw-bold fs-1" data-storke="2000">0</p>
+                <p class="fw-bold text-light fs-sm">贊助人數</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slide 4 -->
+        <div class="swiper-slide swiper-slide-donate">
+          <div class="bg-primary fund-card py-3">
+            <h3 class="fw-bold mt-1 mb-4 text-center text-light ls-16">喵星人之友</h3>
+            <div class="d-flex justify-content-between py-4 px-6">
+              <div class="">
+                <p class="text-stroke fw-bolder fs-1" data-storke="NT$6,000">NT$6,00</p>
+                <p class="fw-bold text-light fs-sm">每次捐款金額</p>
+              </div>
+              <div class="">
+                <p class="text-stroke fw-bold fs-1" data-storke="2000">9957</p>
+                <p class="fw-bold text-light fs-sm">贊助人數</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slide 5 -->
+        <div class="swiper-slide swiper-slide-donate">
+          <div class="bg-primary fund-card py-3">
+            <h3 class="fw-bold mt-1 mb-4 text-center text-light ls-16">喵星傳奇</h3>
+            <div class="d-flex justify-content-between py-4 px-6">
+              <div class="">
+                <p class="text-stroke fw-bolder fs-1" data-storke="NT$6,000">NT$6,0000</p>
+                <p class="fw-bold text-light fs-sm">每次捐款金額</p>
+              </div>
+              <div class="">
+                <p class="text-stroke fw-bold fs-1" data-storke="2000">999</p>
+                <p class="fw-bold text-light fs-sm">贊助人數</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-slide swiper-slide-donate">
+          活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・
+        </div> -->
       </div>
-      
-      <!-- 按鈕 -->
-      <div class="mx-auto py-9">
-        <a href="#" class="btn-main d-flex">
-          前往捐款
-          <span class="material-symbols-outlined">
-            arrow_right
-          </span>
-        </a>
-      </div>
-      
-     
+    </div>
+
+    <!-- 按鈕 -->
+    <div class="d-flex justify-content-center py-9">
+      <a href="donation.html" class="btn-main d-flex w-25">
+        前往捐款
+        <span class="material-symbols-outlined">
+          arrow_right
+        </span>
+      </a>
     </div>
 
     <!-- 表單 -->
@@ -318,7 +372,7 @@
             <div class="col-lg-4 d-flex flex-column align-items-center">
               <div class="mb-4 text-center w-100">
                 <label for="name" class="form-label mb-4">姓名</label>
-                <input class="form-control bg-transparent text-center" type="text" name="" id="name" placeholder="請輸入中文或英文姓名">
+                <input class="form-control bg-transparent text-center" type="text" name="name" id="name" placeholder="請輸入中文或英文姓名" value="hello">
               </div>
               <div class="mb-4 text-center  w-100">
                 <label for="email" class="form-label mb-4">Email</label>
@@ -334,7 +388,7 @@
                   
                 </textarea>
               </div>
-              <button class="btn-main" type="submit">送出
+              <button class="btn-main" type="submit" id="submit">送出
                 <span class="material-symbols-outlined fs-5 text-center">
                   arrow_right
                 </span>
@@ -351,13 +405,37 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: { 
+          
+          992: {  //当屏幕宽度大于等于992 
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          1280: {  //当屏幕宽度大于等于768 
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
+      });
+    </script>
+    <script>
+      const donateSwiper = new Swiper(".donateSwiper", {
+        slidesPerView: "auto", // 參考解答解決換行問題了
+        allowTouchMove: false, // 參考解答加上
+        spaceBetween: 30,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 7000,
       });
     </script>
     <script type="module" src="../main.js"></script>
