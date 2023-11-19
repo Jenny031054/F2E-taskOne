@@ -25,9 +25,21 @@ p {
 .ls-16 {
   letter-spacing: 16px;
 }
+.ls-10 {
+  letter-spacing: 10px;
+}
 .ls-32 {
   letter-spacing: 32px;
 }
+h1{
+  .fs-lg-1 {
+    font-size: 48px;
+    @media (max-width:992px) {
+      font-size: 18px;
+    }
+  }
+}
+
 .nav-brand-width {
   width: 160px;
 }
@@ -125,6 +137,9 @@ p {
     top:50%;
     left: 0px;
     rotate: 45deg;
+    @media (max-width:992px) {
+      width: 0px;
+    }
   }
   &::after {
     position: absolute;
@@ -135,6 +150,9 @@ p {
     top:50%;
     right: 0px;
     rotate: 315deg;
+    @media (max-width:992px) {
+      width: 0px;
+    }
   }
 }
 .bg-form{
@@ -144,7 +162,7 @@ p {
 
 //component btn
 .btn-main {
-  width: 50%;
+  
   padding: 8px 20px ;
   border: #105EA7 1px solid;
   border-radius: 50px;
@@ -153,6 +171,10 @@ p {
   justify-content: center;
   align-items: center;
   color: #fff;
+  &:hover {
+    background: $primary;
+  }
+  
 } 
 //
 .triangle {
@@ -169,8 +191,26 @@ p {
   letter-spacing: 16px;
   @media (max-width:992px) {
     left: 50%;
-    top:10%;
+    top:30px;
     transform: translate(-50%, -50%);
+  }
+}
+.news-link {
+  top: -50px;
+  right: 15%;
+  letter-spacing:16px;
+  @media (max-width:992px) {
+    left: 55%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    
+  }
+}
+.hover-large {
+  
+  &:hover{
+    transform: scale(1.2);
+    transition: all 1s ease;
   }
 }
 //google icon

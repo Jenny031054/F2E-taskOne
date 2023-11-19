@@ -12,10 +12,11 @@
       <%- include('./layout/header'); -%>
       <div class="container p-5">
         <div class="d-flex justify-content-center">
-          <h1 class="text-secondary fw-bold text-center ls-16">
-            <p class="mb-4">台灣的明天，喵先鋪路！</p>
-            
-            <p>為喵星人，護台灣！</p>
+          <h1 class="text-secondary  fw-bold text-center ls-16">
+            <p class="fs-lg-1 mb-4" data-aos="zoom-in">
+              台灣的明天，喵先鋪路！
+            </p>
+            <p class="fs-lg-1" data-aos="zoom-in">為喵星人，護台灣！</p>
           </h1>
         </div>
         
@@ -26,25 +27,33 @@
     <div class="container bg-g">
       <div class="row justify-content-between align-items-center py-9">
         <div class="col-lg-4">
-          <div class="d-flex flex-column text-center w-100">
+          <div class="d-flex flex-column text-center w-100" data-aos="flip-left">
             <h2 class="fs-1 font-NotoSerif fw-bolder ls-16">喵立翰</h2>
             <h5 class="fs-5">MIAO LI-HAN</h5>
             <h5 class="fs-5 ls-16">立法委員候選人</h5>
           </div>
         </div>
         <div class="col-lg-6">
-          <h4 class="w-50 pb-6 mb-6 border-bottom border-gray fw-normal">主張</h4>
-          <p class="mb-6">我堅信，藉由推動更完善的貓咪福利和相關政策，更是間接地投資於台灣的未來。畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，為台灣的 GDP 經濟帶來巨大效益。</p>
-          <p class="mb-6">因此，我期望能在立法院內推進這些政策，確保每一隻貓咪都能得到他們應有的照顧，同時也為台灣的經濟發展助一臂之力。讓我們一同護航台灣的幸福經濟，從照顧每一隻貓咪開始。</p>
+          <h4 class="w-50 pb-6 mb-6 border-bottom border-gray fw-normal" data-aos="flip-left">主張</h4>
+          <p class="mb-6" data-aos="flip-left">我堅信，藉由推動更完善的貓咪福利和相關政策，更是間接地投資於台灣的未來。畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，為台灣的 GDP 經濟帶來巨大效益。</p>
+          <p class="mb-6" data-aos="flip-left">因此，我期望能在立法院內推進這些政策，確保每一隻貓咪都能得到他們應有的照顧，同時也為台灣的經濟發展助一臂之力。讓我們一同護航台灣的幸福經濟，從照顧每一隻貓咪開始。</p>
         </div>
       </div>
     </div>
     <!-- 最新消息 -->
     <div class="container-lg-fluid py-9 ">
       
-      <div class="bg-news  position-relative" >
+      <div class="bg-news  position-relative" data-aos="fade-left">
         <img src="../assets/images/Polygon 1.png" alt="" class="triangle position-absolute">
         <h2 class="fw-bold position-absolute news-title">最新消息</h2>
+        <div class="news-link position-absolute">
+          <a href="news.html" class="fs-5 d-flex align-items-center">
+            M O R E
+            <span class="material-symbols-outlined">
+              arrow_right
+            </span>
+          </a>
+        </div>
         <!-- Swiper -->
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -57,13 +66,16 @@
                   <p class="text-light">12 / 4</p>
                 </div>
   
-                <p class="fs-6 pe-4">參與台北寵物論壇
+                <p class="fs-6 pe-lg-4 ls-10">參與台北寵物論壇
                   <br> 爭取貓咪友善環境
                 </p>
               </div>
               <!-- 圖片 -->
-              <div class="mb-3 position-relative">
-                <img src="https://s3-alpha-sig.figma.com/img/86c4/c3d3/04af15176a001b218cb82617a75a9bfe?Expires=1701043200&Signature=avspB3JyadRVWCP85t0Mut58dvdaFHvidNMRYZc~qgLo85aQREjNAnj05cw5IduMjdOAuM1nVtXYYOF6dxGEYGiIqJBeM1d1KpK2TkHQv3WiEsDkG-DWveWyI1QwHS77MPBjbRG0~uEIy1Kg-LA2JgLePNs51pGqSIwdznLgvSSalkO83V284Y4prZnZioFbdSiz3Y0VBfmX76fYQwOWD4KTIey9OxoWdtbG7QrtjxOy7eiV20KqXD9iEuDdruCT4KxFQ86VT32f7DkNwjlvfoBEB8PllOiY~d5FMhb0cpOFE5EAz1kkzBOlG5gSBnIHOyRSemj2BWf9MKlasmO9IQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" class="">
+              <div class="mb-3 mt-3 position-relative">
+                <div class="overflow-hidden">
+                  <img src="https://s3-alpha-sig.figma.com/img/86c4/c3d3/04af15176a001b218cb82617a75a9bfe?Expires=1701043200&Signature=avspB3JyadRVWCP85t0Mut58dvdaFHvidNMRYZc~qgLo85aQREjNAnj05cw5IduMjdOAuM1nVtXYYOF6dxGEYGiIqJBeM1d1KpK2TkHQv3WiEsDkG-DWveWyI1QwHS77MPBjbRG0~uEIy1Kg-LA2JgLePNs51pGqSIwdznLgvSSalkO83V284Y4prZnZioFbdSiz3Y0VBfmX76fYQwOWD4KTIey9OxoWdtbG7QrtjxOy7eiV20KqXD9iEuDdruCT4KxFQ86VT32f7DkNwjlvfoBEB8PllOiY~d5FMhb0cpOFE5EAz1kkzBOlG5gSBnIHOyRSemj2BWf9MKlasmO9IQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" class="hover-large">
+                </div>
+                
                 <div class="position-absolute news-card-tag bg-primary">
                   <a href="#" class="me-3">
                     <span class="text-light material-symbols-outlined material-symbols-outlined-fill">
@@ -91,14 +103,17 @@
                   <p class="text-light">12 / 4</p>
                 </div>
   
-                <p class="fs-6 pe-4">
+                <p class="fs-6 pe-lg-4 ls-10">
                   參與台北寵物論壇
                   <br> 爭取貓咪友善環境
                 </p>
               </div>
               <!-- 圖片 -->
-              <div class="mb-3 position-relative">
-                <img src="https://s3-alpha-sig.figma.com/img/003b/6f32/7035d7d3966e8293394ec20be82b06fa?Expires=1701043200&Signature=NGnant2JaE3hvLY8h~IqyO6s0tiVxhSOzxD5fiGe8Ck4xHsAJHGQvHWWTpnUUVtuhW~Dr2vpXOUNCS58JzuP-iv67pdE7rm1DK6xLwbw6nALMixVtrwMxRWIZaW2U7d16bBy6rqxjGh2Fe6sLR3Bu9wmTHrCh9ecDfg2tJ70fNWpSYO384yyAF2O8KjXokdiGLs1sGoLyzqwThKl1Pf~~3xZ2FUjjlu-W7O3KILaLZln84RIyHeQkcjjk8~WPp5CskmE-mV2M-JaZRrsGDyGZLH8N8ekM~ova1d1ZybQXs6WHfZ6kRtZ8FOnfCL~ZZBvJljtXyj-GTSlSPOJjhzfZg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" class="">
+              <div class="mb-3 mt-3 position-relative">
+                <div class="overflow-hidden">
+                  <img src="https://s3-alpha-sig.figma.com/img/003b/6f32/7035d7d3966e8293394ec20be82b06fa?Expires=1701043200&Signature=NGnant2JaE3hvLY8h~IqyO6s0tiVxhSOzxD5fiGe8Ck4xHsAJHGQvHWWTpnUUVtuhW~Dr2vpXOUNCS58JzuP-iv67pdE7rm1DK6xLwbw6nALMixVtrwMxRWIZaW2U7d16bBy6rqxjGh2Fe6sLR3Bu9wmTHrCh9ecDfg2tJ70fNWpSYO384yyAF2O8KjXokdiGLs1sGoLyzqwThKl1Pf~~3xZ2FUjjlu-W7O3KILaLZln84RIyHeQkcjjk8~WPp5CskmE-mV2M-JaZRrsGDyGZLH8N8ekM~ova1d1ZybQXs6WHfZ6kRtZ8FOnfCL~ZZBvJljtXyj-GTSlSPOJjhzfZg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" class="hover-large">
+                </div>
+                
                 <div class="position-absolute news-card-tag bg-primary">
                   <a href="#" class="me-3">
                     <span class="text-light material-symbols-outlined material-symbols-outlined-fill">
@@ -126,13 +141,16 @@
                   <p class="text-light">12 / 4</p>
                 </div>
   
-                <p class="fs-6 pe-4">
+                <p class="fs-6 pe-lg-4 ls-10">
                   收容所模特兒大比拼！
                 </p>
               </div>
               <!-- 圖片 -->
-              <div class="mb-3 position-relative">
-                <img src="https://s3-alpha-sig.figma.com/img/9ed0/3570/e50a77348cafcc55f4e26f739b5d91e1?Expires=1701043200&Signature=l-TfZLsIY5dzrGaajki73K8qdKgVR6B1EEfCtQbgKUiYnFpEYd-SzK-wMBK6e6QBuq9TzPxWe0LOOKqjL5AFGggYMdnJsYNYRn6e0Pl0J9F0-Cm6PEdE8nxrhkhK02-yceGv56M733F0ZXZPaO5QaAfeObWyfeS8ELnwfyldXJJxzvUAOyLWMF32QvZ3KoMbfjUkNH4Wi-~r8mhQfjasa2tzzvNh2--9Z3qi4BOau8SQoj1NYqiv8hTDIhj90xXTr7iaWzvE2yRDWdvKNYzXezy7-tQpZcFdrYfXXQRx-Yd1M9Rxi7rla79OablQ-hwDKpxW6TyDtvg7umu0qlwO5A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" class="">
+              <div class="mb-3 mt-3 position-relative">
+                <div class="overflow-hidden">
+                  <img src="https://s3-alpha-sig.figma.com/img/9ed0/3570/e50a77348cafcc55f4e26f739b5d91e1?Expires=1701043200&Signature=l-TfZLsIY5dzrGaajki73K8qdKgVR6B1EEfCtQbgKUiYnFpEYd-SzK-wMBK6e6QBuq9TzPxWe0LOOKqjL5AFGggYMdnJsYNYRn6e0Pl0J9F0-Cm6PEdE8nxrhkhK02-yceGv56M733F0ZXZPaO5QaAfeObWyfeS8ELnwfyldXJJxzvUAOyLWMF32QvZ3KoMbfjUkNH4Wi-~r8mhQfjasa2tzzvNh2--9Z3qi4BOau8SQoj1NYqiv8hTDIhj90xXTr7iaWzvE2yRDWdvKNYzXezy7-tQpZcFdrYfXXQRx-Yd1M9Rxi7rla79OablQ-hwDKpxW6TyDtvg7umu0qlwO5A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" class="hover-large">
+                </div>
+                
                 <div class="position-absolute news-card-tag bg-primary">
                   <a href="#" class="me-3">
                     <span class="text-light material-symbols-outlined material-symbols-outlined-fill">
@@ -160,13 +178,16 @@
                   <p class="text-light">12 / 4</p>
                 </div>
   
-                <p class="fs-6 pe-4 ls-16">
+                <p class="fs-6 pe-lg-4 ls-10 ls-16">
                   貓星登場！
                 </p>
               </div>
               <!-- 圖片 -->
-              <div class="mb-3 position-relative">
-                <img src="https://s3-alpha-sig.figma.com/img/7d56/09e7/09b285993ce16e66e36a811e31865653?Expires=1701043200&Signature=RFoHOoPgmIog2xgGmLm1otmpAg~aFWxZ3SRhkIgWp3IeZuRkWSPrjKqkRLbetRF8slUKb5sOP~qS1QW7YLwWV0i-omAUqFS9AwKccl5DdlfPTjt3oiwj2-UcftySxuQvw3f3CMJOmDTTWQqHFTexRbIBrwUmD8ruDJQjHrDJJR-Q2EJBqD8Q7BOKSAiSOpLy8YNxOCsfhvWJOFZ3T9YB0Ev7Dl91-fZnolM5YlGEsVaKelKHFpqbGyd39Re-tpfH6XPa02mLaxEJcc3jbn80icwY41SrpB0nGxnhwwUftiMmhU0aX980QHvdDp~J7o1hG~By3Foi2MkvDxc9y4E9Uw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" class="img-fluid">
+              <div class="mb-3 mt-3 position-relative">
+                <div class="overflow-hidden">
+                  <img src="https://s3-alpha-sig.figma.com/img/7d56/09e7/09b285993ce16e66e36a811e31865653?Expires=1701043200&Signature=RFoHOoPgmIog2xgGmLm1otmpAg~aFWxZ3SRhkIgWp3IeZuRkWSPrjKqkRLbetRF8slUKb5sOP~qS1QW7YLwWV0i-omAUqFS9AwKccl5DdlfPTjt3oiwj2-UcftySxuQvw3f3CMJOmDTTWQqHFTexRbIBrwUmD8ruDJQjHrDJJR-Q2EJBqD8Q7BOKSAiSOpLy8YNxOCsfhvWJOFZ3T9YB0Ev7Dl91-fZnolM5YlGEsVaKelKHFpqbGyd39Re-tpfH6XPa02mLaxEJcc3jbn80icwY41SrpB0nGxnhwwUftiMmhU0aX980QHvdDp~J7o1hG~By3Foi2MkvDxc9y4E9Uw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" class="img-fluid hover-large">
+                </div>
+                
                 <div class="position-absolute news-card-tag bg-primary">
                   <a href="#" class="me-3">
                     <span class="text-light material-symbols-outlined material-symbols-outlined-fill">
@@ -195,30 +216,30 @@
       
     </div>
     <!-- 政策議題 -->
-    <div class="container d-flex flex-column py-9">
-      <h2 class="fw-bold text-center ls-16 ">政策議題</h2>
+    <div class="container d-flex flex-column py-lg-9 py-4">
+      <h2 class="fw-bold text-center ls-16 " data-aos="zoom-in-down">政策議題</h2>
       <div class="row justify-content-between py-9">
-        <div class="col-lg-4">
+        <div class="col-lg-4 mb-4">
           <div class="d-flex flex-column justify-content-between align-items-center">
-            <div class="policy-icon-bg bg-primary border">
+            <div class="policy-icon-bg bg-primary border mb-7 mb-lg-4" data-aos="zoom-in-down">
               <span 
               class="policy-icon material-symbols-outlined material-symbols-outlined-fill text-white text-center">
                 medical_services
               </span>
             </div>
-            <p class="fs-6 mt-7 text-center">為毛孩子謀福利！
+            <p class="fs-6 mt-7 ls-10 ls-10 text-center ">為毛孩子謀福利！
               <br> 推動寵物醫療保障方案</p>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 mb-4">
           <div class="d-flex flex-column justify-content-between align-items-center">
-            <div class="policy-icon-bg bg-primary border">
+            <div class="policy-icon-bg mb-7 mb-lg-4 bg-primary border" data-aos="zoom-in-down">
               <span 
               class="policy-icon material-symbols-outlined material-symbols-outlined-fill text-white text-center">
                 deck
               </span>
             </div>
-            <p class="fs-6 mt-7 text-center">
+            <p class="fs-6 mt-7 ls-10 text-center">
               打造休閒天堂！ 
               <br>推廣寵物休閒與娛樂場所
             </p>
@@ -226,13 +247,13 @@
         </div>
         <div class="col-lg-4">
           <div class="d-flex flex-column justify-content-between align-items-center">
-            <div class="policy-icon-bg bg-primary border">
+            <div class="policy-icon-bg mb-7 mb-lg-4 bg-primary border" data-aos="zoom-in-down">
               <span 
               class="policy-icon material-symbols-outlined material-symbols-outlined-fill text-white text-center">
                 volunteer_activism
               </span>
             </div>
-            <p class="fs-6 mt-7 text-center">推廣寵物飼養教育
+            <p class="fs-6 mt-7 ls-10 text-center">推廣寵物飼養教育
               <br>
               讓愛更加專業
           </div>
@@ -251,13 +272,13 @@
     <!-- 小額捐款 -->
     <div class="container d-flex flex-column justify-content-center py-9">
       <div class="text-center mb-9">
-        <h2 class="fw-bold ls-16 mb-3">您的小筆捐款<br> 是每隻毛孩未來的大大動力！</h2>
-        <p class="mt-1">目前小額贊助總金額：987,655,873</p>
+        <h2 class="fw-bold ls-16 mb-3" data-aos="fade-up">您的小筆捐款<br> 是每隻毛孩未來的大大動力！</h2>
+        <p class="mt-1" data-aos="fade-up">目前小額贊助總金額：987,655,873</p>
       </div>
         
     </div>
     <!-- swiper 捐款卡片輪播跑馬燈 -->
-    <div class="swiper donateSwiper">
+    <div class="swiper donateSwiper" data-aos="fade-up">
       <div class="swiper-wrapper swiper-wrapper-donate ">
         <!-- slide 1 -->
         <div class="swiper-slide swiper-slide-donate">
@@ -265,7 +286,7 @@
             <h3 class="fw-bold mt-1 mb-4 text-center text-light ls-16">喵星大使</h3>
             <div class="d-flex justify-content-between py-4 px-6">
               <div class="">
-                <p class="text-stroke fw-bolder fs-1" data-storke="NT$6,000">NT$6,000</p>
+                <p class="text-stroke fw-bolder fs-1" >NT$6,000</p>
                 <p class="fw-bold text-light fs-sm">每次捐款金額</p>
               </div>
               <div class="">
@@ -281,11 +302,11 @@
             <h3 class="fw-bold mt-1 mb-4 text-center text-light ls-16">喵星傳奇</h3>
             <div class="d-flex justify-content-between py-4 px-6">
               <div class="">
-                <p class="text-stroke fw-bolder fs-1" data-storke="NT$6,000">NT$6,0000</p>
+                <p class="text-stroke fw-bolder fs-1" >NT$6,0000</p>
                 <p class="fw-bold text-light fs-sm">每次捐款金額</p>
               </div>
               <div class="">
-                <p class="text-stroke fw-bold fs-1" data-storke="2000">999</p>
+                <p class="text-stroke fw-bold fs-1" >999</p>
                 <p class="fw-bold text-light fs-sm">贊助人數</p>
               </div>
             </div>
@@ -301,7 +322,7 @@
                 <p class="fw-bold text-light fs-sm">每次捐款金額</p>
               </div>
               <div class="">
-                <p class="text-stroke fw-bold fs-1" data-storke="2000">0</p>
+                <p class="text-stroke fw-bold fs-1" >0</p>
                 <p class="fw-bold text-light fs-sm">贊助人數</p>
               </div>
             </div>
@@ -313,11 +334,11 @@
             <h3 class="fw-bold mt-1 mb-4 text-center text-light ls-16">喵星人之友</h3>
             <div class="d-flex justify-content-between py-4 px-6">
               <div class="">
-                <p class="text-stroke fw-bolder fs-1" data-storke="NT$6,000">NT$6,00</p>
+                <p class="text-stroke fw-bolder fs-1" >NT$600</p>
                 <p class="fw-bold text-light fs-sm">每次捐款金額</p>
               </div>
               <div class="">
-                <p class="text-stroke fw-bold fs-1" data-storke="2000">9957</p>
+                <p class="text-stroke fw-bold fs-1" >9957</p>
                 <p class="fw-bold text-light fs-sm">贊助人數</p>
               </div>
             </div>
@@ -329,7 +350,7 @@
             <h3 class="fw-bold mt-1 mb-4 text-center text-light ls-16">喵星傳奇</h3>
             <div class="d-flex justify-content-between py-4 px-6">
               <div class="">
-                <p class="text-stroke fw-bolder fs-1" data-storke="NT$6,000">NT$6,0000</p>
+                <p class="text-stroke fw-bolder fs-1" >NT$6,0000</p>
                 <p class="fw-bold text-light fs-sm">每次捐款金額</p>
               </div>
               <div class="">
@@ -346,7 +367,7 @@
     </div>
 
     <!-- 按鈕 -->
-    <div class="d-flex justify-content-center py-9">
+    <div class="d-flex justify-content-center py-9 d-none">
       <a href="donation.html" class="btn-main d-flex w-25">
         前往捐款
         <span class="material-symbols-outlined">
@@ -354,20 +375,36 @@
         </span>
       </a>
     </div>
+    <div class="container">
+      <div class="d-grid gap-2 col-6 col-lg-4 py-9 mx-auto">
+        <a  href="donation.html" class="btn-main d-flex">
+          前往捐款
+          <span class="material-symbols-outlined">
+            arrow_right
+          </span>
+        </a>
+      </div>
+    </div>
+    
 
     <!-- 表單 -->
-    <div class="container py-9">
+    <div class="container py-7 py-lg-9">
       <div 
-       class="form-line d-flex flex-column align-items-center justify-content-center mb-8">
-        <h2 class="fw-bold ls-16 mb-4">您的聲音，我們的行動！</h2>
+       class="form-line d-flex flex-column align-items-center justify-content-center mb-8" data-aos="fade-up">
+        <h2 class="fw-bold ls-16 mb-4 d-none d-lg-block" data-aos="fade-up">
+          您的聲音，我們的行動！</h2>
+        <h2 class="fw-bold fs-4 ls-16 mb-4 text-center d-lg-none" data-aos="fade-up">
+          <p class="mb-2">您的聲音，</p>
+          <p>我們的行動！</p>
+        </h2>
         <p class="text-center">親愛的鄉親，每一位市民的意見都是我們社區前進的原動力。
           <br> 無論大小事，我都誠摯希望聽到您的建議。 
           <br>分享您的想法，一同為我們的未來打造更美好！
         </p>
       </div>
       <!-- 填寫區 -->
-      <div class="bg-light bg-form py-7">
-        <form action="" class="">
+      <div class="bg-light bg-form py-7" data-aos="fade-up">
+        <form action="" class="p-3 p-lg-0">
           <div class="row justify-content-center">
             <div class="col-lg-4 d-flex flex-column align-items-center">
               <div class="mb-4 text-center w-100">
@@ -388,11 +425,14 @@
                   
                 </textarea>
               </div>
-              <button class="btn-main" type="submit" id="submit">送出
-                <span class="material-symbols-outlined fs-5 text-center">
-                  arrow_right
-                </span>
-              </button>
+              <div class="d-grid gap-2 mx-auto col-6">
+                <button class="btn-main" type="submit" id="submit">送出
+                  <span class="material-symbols-outlined fs-5 text-center">
+                    arrow_right
+                  </span>
+                </button>
+              </div>
+              
             </div>
           </div>
           
@@ -437,6 +477,10 @@
         loop: true,
         speed: 7000,
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
     <script type="module" src="../main.js"></script>
   </body>

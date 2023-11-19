@@ -1,4 +1,13 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+ul,li {
+  list-style: none;
+}
+.navbar-toggler {
+  border: 0px;
+  left:5%
+}
+.navbar-toggler-icon {
+  border-radius: 100%;
+  background: #fff;
+  width: 2.5em;
+  height: 2.5em;
 }
