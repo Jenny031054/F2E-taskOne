@@ -73,9 +73,16 @@
 }
 
 .donate-page-container {
+    width: 80%;
     border: $primary 3px dashed;
     &:hover {
         border: $secondary 3px dashed;
+        p,.text-primary {
+            color: $secondary
+        }
+        .dashed-bottom{
+            border-bottom: $secondary 3px dashed;
+        }
     }
     @media (max-width:992px) {
         width: 100%;
